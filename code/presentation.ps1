@@ -24,4 +24,4 @@ Get-PSFConfig PSModuleDevelopment.Template.ParameterDefault.*
 
 New-PSMDTemplate -ReferencePath "$repoRoot\TemplateSources\SimpleModule" -TemplateName MyModule
 Get-PSMDTemplate
-Invoke-PSMDTemplate MyModule -OutPath "$repoRoot\Projects"
+Invoke-PSMDTemplate MyModule -OutPath "$repoRoot\Projects" -Parameters @{ Company = 'Contoso ltd.'}
